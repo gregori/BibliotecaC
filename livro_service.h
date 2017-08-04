@@ -2,6 +2,7 @@
 #define LIVRO_SERVICE_H
 
 #include <stdio.h>  
+#include <stdlib.h>
 #include "livro.h"
 
 #define MAXLINES 256
@@ -15,6 +16,7 @@ void inicializa_base();
 void fecha_base();
 
 void adiciona_livro_s(livro_t livro);
+void adiciona_livro_file_s(livro_t livro, char *arquivo);
 livro_t *lista_livros_s();
 void remove_livro_s(int id);
 livro_t busca_livro_s(int id);

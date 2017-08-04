@@ -8,6 +8,8 @@
 /* Mostra o menu e retorna a opcao do usuario */
 int menu();
 
+void flush_input();
+
 void imprime_titulo_tabela();
 void imprime_rodape_tabela();
 
@@ -18,10 +20,11 @@ void imprime_livro(livro_t livro);
 void imprime_tabela(livro_t livro);
 
 /* Imprime a tabela atraves de um array de livros */
-void imprime_tabela(livro_t *livros);
+void imprime_tabela_livros(livro_t *livros);
 
 /* Pede ao usuario o id do livro via console */
-int obtem_id_livro(char *titulo);
+int obtem_id_livro_titulo(char *titulo);
+int obtem_id_livro();
 
 /* obtem informacoes do livro via console */
 livro_t obtem_livro(int novo);
